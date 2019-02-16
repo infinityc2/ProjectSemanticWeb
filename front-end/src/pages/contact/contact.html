@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Search
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3"></ion-col>
+      <ion-col >
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="searchText" placeholder="Search"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="getSearchCard(searchText)">Search</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card *ngFor="let search of searchData" style="background: none">
+    <img src="{{search}}">
+  </ion-card>
+</ion-content>

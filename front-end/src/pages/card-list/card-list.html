@@ -1,0 +1,45 @@
+<!--
+  Generated template for the CardListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Card List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      HEARTHSTONE CARD LIST
+      <ion-item-divider></ion-item-divider>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <button ion-button color="dark" full (click)="linkClass()" >CLASS</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button color="dark" full (click)="linkManaCost()" >MANACOST</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button color="dark" full (click)="linkRarity()" >RARITY</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button color="dark" full (click)="linkType()" >TYPE</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let card of cards" style="background: none">
+    <img src="{{card}}">
+  </ion-card>
+  
+</ion-content>

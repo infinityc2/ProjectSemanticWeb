@@ -6,6 +6,9 @@
   <li>spring-boot</li>
 </ul>
 
+## Initial Project
+> npm install
+
 ## ionic
 > ionic serve
 

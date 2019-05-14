@@ -1,16 +1,18 @@
 # ProjectSemanticWeb
 
 ## Hearthstone Search Engine
-<ul>
-  <li>ionic</li>
-  <li>spring-boot</li>
-</ul>
+* ionic
+* spring-boot
+
 
 ## Initial Project
-> npm install
+```
+$ git clone https://github.com/infinityc2/ProjectSemanticWeb.git
+$ npm install
+```
 
 ## ionic
-> ionic serve
+> $ ionic serve
 
 ## spring-boot
-> mvn spring-boot:run
+> $ mvn spring-boot:run

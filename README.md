@@ -7,7 +7,7 @@
 
 ## Initial Project
 ```
-$ git clone https://github.com/infinityc2/ProjectSemanticWeb.git
+$ cd ProjectSemanticWeb
 $ npm install
 ```
 
